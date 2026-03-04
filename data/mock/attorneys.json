@@ -1,0 +1,237 @@
+{
+  "data": {
+    "nodeAttorneys": {
+      "__typename": "NodeAttorneyConnection",
+      "nodes": [
+        {
+          "__typename": "NodeAttorney",
+          "id": "attorney-sterling",
+          "title": "James A. Sterling",
+          "path": "/attorneys/james-sterling",
+          "body": {
+            "processed": "<p>James Sterling is the founding partner of Sterling & Associates and has led the firm for over 35 years. His practice focuses on complex commercial litigation and corporate transactions. He has been recognized by Best Lawyers in America and Super Lawyers for his outstanding legal work.</p>",
+            "summary": "James Sterling is the founding partner of Sterling & Associates and has led the firm for over 35 years. His practice focuses on complex commercial litigation and corporate transactions. He has been re"
+          },
+          "practiceArea": [
+            {
+              "id": "corporate-law",
+              "name": "corporate-law"
+            },
+            {
+              "id": "commercial-litigation",
+              "name": "commercial-litigation"
+            }
+          ],
+          "role": [
+            {
+              "id": "partner",
+              "name": "partner"
+            }
+          ],
+          "email": "jsterling@sterlinglaw.com",
+          "phone": "(555) 800-1001",
+          "office": "Main Office, Suite 4000",
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80",
+            "alt": "James A. Sterling",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "education": {
+            "processed": "<p><strong>J.D.</strong>, Harvard Law School, 1988<br/><strong>B.A. in Political Science</strong>, Yale University, 1985</p>",
+            "summary": "J.D., Harvard Law School, 1988B.A. in Political Science, Yale University, 1985"
+          },
+          "barAdmissions": "New York, Connecticut, U.S. Supreme Court"
+        },
+        {
+          "__typename": "NodeAttorney",
+          "id": "attorney-chen",
+          "title": "Sarah L. Chen",
+          "path": "/attorneys/sarah-chen",
+          "body": {
+            "processed": "<p>Sarah Chen is a senior partner specializing in real estate law and corporate transactions. She has closed over $3 billion in commercial real estate deals and is recognized as a leading practitioner in the field. She frequently speaks at industry conferences on emerging trends in real estate finance.</p>",
+            "summary": "Sarah Chen is a senior partner specializing in real estate law and corporate transactions. She has closed over $3 billion in commercial real estate deals and is recognized as a leading practitioner in"
+          },
+          "practiceArea": [
+            {
+              "id": "real-estate",
+              "name": "real-estate"
+            }
+          ],
+          "role": [
+            {
+              "id": "partner",
+              "name": "partner"
+            }
+          ],
+          "email": "schen@sterlinglaw.com",
+          "phone": "(555) 800-1002",
+          "office": "Main Office, Suite 3800",
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
+            "alt": "Sarah L. Chen",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "education": {
+            "processed": "<p><strong>J.D.</strong>, Columbia Law School, 1999<br/><strong>B.S. in Finance</strong>, University of Pennsylvania, 1996</p>",
+            "summary": "J.D., Columbia Law School, 1999B.S. in Finance, University of Pennsylvania, 1996"
+          },
+          "barAdmissions": "New York, New Jersey"
+        },
+        {
+          "__typename": "NodeAttorney",
+          "id": "attorney-rodriguez",
+          "title": "Michael D. Rodriguez",
+          "path": "/attorneys/michael-rodriguez",
+          "body": {
+            "processed": "<p>Michael Rodriguez heads the firm's employment law practice. With over 20 years of experience, he advises Fortune 500 companies on complex employment matters and has successfully defended employers in high-stakes litigation across the country.</p>",
+            "summary": "Michael Rodriguez heads the firm's employment law practice. With over 20 years of experience, he advises Fortune 500 companies on complex employment matters and has successfully defended employers in "
+          },
+          "practiceArea": [
+            {
+              "id": "employment-law",
+              "name": "employment-law"
+            }
+          ],
+          "role": [
+            {
+              "id": "partner",
+              "name": "partner"
+            }
+          ],
+          "email": "mrodriguez@sterlinglaw.com",
+          "phone": "(555) 800-1003",
+          "office": "Main Office, Suite 3600",
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+            "alt": "Michael D. Rodriguez",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "education": {
+            "processed": "<p><strong>J.D.</strong>, Georgetown University Law Center, 2002<br/><strong>B.A. in Economics</strong>, Stanford University, 1999</p>",
+            "summary": "J.D., Georgetown University Law Center, 2002B.A. in Economics, Stanford University, 1999"
+          },
+          "barAdmissions": "New York, California, District of Columbia"
+        },
+        {
+          "__typename": "NodeAttorney",
+          "id": "attorney-thompson",
+          "title": "Elizabeth M. Thompson",
+          "path": "/attorneys/elizabeth-thompson",
+          "body": {
+            "processed": "<p>Elizabeth Thompson is a litigation associate known for her meticulous preparation and persuasive courtroom presence. She has been instrumental in securing favorable verdicts and settlements in complex commercial disputes totaling over $200 million.</p>",
+            "summary": "Elizabeth Thompson is a litigation associate known for her meticulous preparation and persuasive courtroom presence. She has been instrumental in securing favorable verdicts and settlements in complex"
+          },
+          "practiceArea": [
+            {
+              "id": "commercial-litigation",
+              "name": "commercial-litigation"
+            }
+          ],
+          "role": [
+            {
+              "id": "associate",
+              "name": "associate"
+            }
+          ],
+          "email": "ethompson@sterlinglaw.com",
+          "phone": "(555) 800-1004",
+          "office": "Main Office, Suite 3200",
+          "photo": {
+            "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+            "alt": "Elizabeth M. Thompson",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          },
+          "education": {
+            "processed": "<p><strong>J.D.</strong>, NYU School of Law, 2015<br/><strong>B.A. in English</strong>, Princeton University, 2012</p>",
+            "summary": "J.D., NYU School of Law, 2015B.A. in English, Princeton University, 2012"
+          },
+          "barAdmissions": "New York"
+        }
+      ]
+    }
+  }
+}

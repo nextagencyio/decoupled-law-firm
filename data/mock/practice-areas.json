@@ -1,0 +1,153 @@
+{
+  "data": {
+    "nodePracticeAreas": {
+      "__typename": "NodePracticeAreaConnection",
+      "nodes": [
+        {
+          "__typename": "NodePracticeArea",
+          "id": "practice-corporate",
+          "title": "Corporate Law",
+          "path": "/practice-areas/corporate-law",
+          "body": {
+            "processed": "<p>Our corporate law practice provides comprehensive legal services to businesses of all sizes. From entity formation and governance to mergers and acquisitions, our attorneys help companies navigate the complex legal landscape.</p><h2>Services Include</h2><ul><li>Mergers & Acquisitions</li><li>Corporate Governance</li><li>Securities Regulation</li><li>Joint Ventures & Strategic Alliances</li><li>Shareholder Disputes</li></ul>",
+            "summary": "Our corporate law practice provides comprehensive legal services to businesses of all sizes. From entity formation and governance to mergers and acquisitions, our attorneys help companies navigate the"
+          },
+          "image": {
+            "url": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&q=80",
+            "alt": "Corporate Law",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodePracticeArea",
+          "id": "practice-litigation",
+          "title": "Commercial Litigation",
+          "path": "/practice-areas/commercial-litigation",
+          "body": {
+            "processed": "<p>When disputes arise, our litigation team provides aggressive yet strategic representation in state and federal courts. We have a proven track record of achieving favorable outcomes for our clients in complex commercial disputes.</p><h2>Areas of Focus</h2><ul><li>Breach of Contract</li><li>Business Torts</li><li>Class Action Defense</li><li>Intellectual Property Disputes</li><li>Antitrust Litigation</li></ul>",
+            "summary": "When disputes arise, our litigation team provides aggressive yet strategic representation in state and federal courts. We have a proven track record of achieving favorable outcomes for our clients in "
+          },
+          "image": {
+            "url": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&q=80",
+            "alt": "Commercial Litigation",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodePracticeArea",
+          "id": "practice-realestate",
+          "title": "Real Estate Law",
+          "path": "/practice-areas/real-estate",
+          "body": {
+            "processed": "<p>Our real estate practice handles all aspects of commercial and residential real estate transactions. We represent developers, investors, lenders, and property owners in transactions across the country.</p><h2>Services Include</h2><ul><li>Commercial Leasing</li><li>Property Acquisitions & Sales</li><li>Real Estate Finance</li><li>Land Use & Zoning</li><li>Title Insurance</li></ul>",
+            "summary": "Our real estate practice handles all aspects of commercial and residential real estate transactions. We represent developers, investors, lenders, and property owners in transactions across the country"
+          },
+          "image": {
+            "url": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80",
+            "alt": "Real Estate Law",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodePracticeArea",
+          "id": "practice-employment",
+          "title": "Employment Law",
+          "path": "/practice-areas/employment-law",
+          "body": {
+            "processed": "<p>We advise employers and employees on the full spectrum of employment law issues. Our team stays current on evolving regulations to provide practical, business-minded counsel.</p><h2>Services Include</h2><ul><li>Employment Discrimination</li><li>Wage & Hour Disputes</li><li>Non-Compete Agreements</li><li>Workplace Investigations</li><li>Executive Compensation</li></ul>",
+            "summary": "We advise employers and employees on the full spectrum of employment law issues. Our team stays current on evolving regulations to provide practical, business-minded counsel.Services IncludeEmployment"
+          },
+          "image": {
+            "url": "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&q=80",
+            "alt": "Employment Law",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

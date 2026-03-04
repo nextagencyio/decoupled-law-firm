@@ -1,0 +1,138 @@
+{
+  "data": {
+    "nodeCaseStudies": {
+      "__typename": "NodeCaseStudyConnection",
+      "nodes": [
+        {
+          "__typename": "NodeCaseStudy",
+          "id": "case-merger",
+          "title": "Tech Sector Merger Defense",
+          "path": "/case-studies/tech-sector-merger",
+          "body": {
+            "processed": "<p>Sterling & Associates represented a mid-market technology company facing a hostile takeover attempt. Our corporate team developed a comprehensive defense strategy that ultimately resulted in a negotiated merger at a 40% premium to the initial offer.</p><h2>Challenge</h2><p>Our client, a publicly traded software company, received an unsolicited acquisition offer significantly below market value. The acquiring company had already accumulated a substantial stake and was pressuring the board.</p><h2>Approach</h2><p>Our team implemented a multi-pronged defense strategy, including shareholder communications, regulatory filings, and identification of a white knight bidder.</p>",
+            "summary": "Sterling & Associates represented a mid-market technology company facing a hostile takeover attempt. Our corporate team developed a comprehensive defense strategy that ultimately resulted in a negotia"
+          },
+          "practiceArea": [
+            {
+              "id": "corporate-law",
+              "name": "corporate-law"
+            }
+          ],
+          "outcome": "$1.2B favorable merger completed at 40% premium",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
+            "alt": "Tech Sector Merger",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeCaseStudy",
+          "id": "case-discrimination",
+          "title": "Employment Class Action Defense",
+          "path": "/case-studies/employment-class-action",
+          "body": {
+            "processed": "<p>We successfully defended a Fortune 500 retail company against a nationwide class action alleging systematic wage and hour violations. The case involved over 10,000 potential class members and sought $500 million in damages.</p><h2>Challenge</h2><p>A group of current and former employees filed a class action alleging the company systematically misclassified workers and failed to pay overtime.</p><h2>Approach</h2><p>Our employment team conducted an exhaustive analysis of pay records, job descriptions, and company policies, ultimately defeating class certification.</p>",
+            "summary": "We successfully defended a Fortune 500 retail company against a nationwide class action alleging systematic wage and hour violations. The case involved over 10,000 potential class members and sought $"
+          },
+          "practiceArea": [
+            {
+              "id": "employment-law",
+              "name": "employment-law"
+            }
+          ],
+          "outcome": "Class certification denied; case dismissed",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=800&q=80",
+            "alt": "Employment Class Action",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeCaseStudy",
+          "id": "case-realestate",
+          "title": "Mixed-Use Development Transaction",
+          "path": "/case-studies/mixed-use-development",
+          "body": {
+            "processed": "<p>Sterling & Associates guided a major real estate developer through the acquisition, financing, and development of a $350 million mixed-use project in downtown Manhattan, including navigating complex zoning requirements and public-private partnerships.</p><h2>Challenge</h2><p>The project required assembling multiple parcels, obtaining zoning variances, securing complex financing, and negotiating with city agencies for public infrastructure improvements.</p><h2>Approach</h2><p>Our real estate team coordinated with environmental counsel, land use specialists, and financial advisors to structure the transaction in phases.</p>",
+            "summary": "Sterling & Associates guided a major real estate developer through the acquisition, financing, and development of a $350 million mixed-use project in downtown Manhattan, including navigating complex z"
+          },
+          "practiceArea": [
+            {
+              "id": "real-estate",
+              "name": "real-estate"
+            }
+          ],
+          "outcome": "$350M development approved and financed in 8 months",
+          "image": {
+            "url": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80",
+            "alt": "Mixed-Use Development",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}

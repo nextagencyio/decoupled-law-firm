@@ -1,0 +1,59 @@
+{
+  "data": {
+    "nodeHomepages": {
+      "__typename": "NodeHomepageConnection",
+      "nodes": [
+        {
+          "__typename": "NodeHomepage",
+          "id": "homepage",
+          "title": "Sterling & Associates Law",
+          "path": "/homepage",
+          "heroTitle": "Trusted Legal Counsel",
+          "heroSubtitle": "When Results Matter Most",
+          "heroDescription": {
+            "processed": "<p>For over three decades, Sterling & Associates has provided exceptional legal representation to individuals and businesses. Our team of experienced attorneys is committed to achieving the best possible outcomes for our clients.</p>",
+            "summary": "For over three decades, Sterling & Associates has provided exceptional legal representation to individuals and businesses. Our team of experienced attorneys is committed to achieving the best possible"
+          },
+          "statsItems": [
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-years",
+              "title": "",
+              "number": "35+",
+              "label": "Years of Experience"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-cases",
+              "title": "",
+              "number": "5,000+",
+              "label": "Cases Won"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-recovery",
+              "title": "",
+              "number": "$2B+",
+              "label": "Recovered for Clients"
+            },
+            {
+              "__typename": "ParagraphStatItem",
+              "id": "stat-attorneys",
+              "title": "",
+              "number": "50+",
+              "label": "Attorneys"
+            }
+          ],
+          "featuredPracticesTitle": "Our Practice Areas",
+          "ctaTitle": "Schedule Your Free Consultation",
+          "ctaDescription": {
+            "processed": "<p>Every case begins with a conversation. Contact us today to discuss your legal needs with one of our experienced attorneys. There is no obligation and no fee unless we win your case.</p>",
+            "summary": "Every case begins with a conversation. Contact us today to discuss your legal needs with one of our experienced attorneys. There is no obligation and no fee unless we win your case."
+          },
+          "ctaPrimary": "Free Consultation",
+          "ctaSecondary": "Call (555) 800-1234"
+        }
+      ]
+    }
+  }
+}

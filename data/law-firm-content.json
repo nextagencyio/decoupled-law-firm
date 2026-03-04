@@ -1,0 +1,321 @@
+{
+  "model": [
+    {
+      "bundle": "homepage",
+      "label": "Homepage",
+      "description": "Law firm homepage with hero, featured practice areas, and call to action",
+      "fields": [
+        { "id": "hero_title", "label": "Hero Title", "type": "string", "description": "Main headline" },
+        { "id": "hero_subtitle", "label": "Hero Subtitle", "type": "string", "description": "Secondary text" },
+        { "id": "hero_description", "label": "Hero Description", "type": "text", "description": "Longer hero description" },
+        { "id": "stats_items", "label": "Statistics", "type": "paragraph(stat_item)[]", "description": "Key firm statistics" },
+        { "id": "featured_practices_title", "label": "Featured Practices Title", "type": "string" },
+        { "id": "cta_title", "label": "CTA Section Title", "type": "string" },
+        { "id": "cta_description", "label": "CTA Description", "type": "text" },
+        { "id": "cta_primary", "label": "Primary CTA Text", "type": "string" },
+        { "id": "cta_secondary", "label": "Secondary CTA Text", "type": "string" }
+      ]
+    },
+    {
+      "bundle": "practice_area",
+      "label": "Practice Area",
+      "description": "Legal practice areas offered by the firm",
+      "body": true,
+      "fields": [
+        { "id": "image", "label": "Featured Image", "type": "image" }
+      ]
+    },
+    {
+      "bundle": "attorney",
+      "label": "Attorney",
+      "description": "Attorney profiles with credentials and practice areas",
+      "body": true,
+      "fields": [
+        { "id": "practice_area", "label": "Practice Area", "type": "term(practice_areas)[]" },
+        { "id": "role", "label": "Role", "type": "term(attorney_roles)[]" },
+        { "id": "email", "label": "Email", "type": "string" },
+        { "id": "phone", "label": "Phone", "type": "string" },
+        { "id": "office", "label": "Office Location", "type": "string" },
+        { "id": "photo", "label": "Photo", "type": "image" },
+        { "id": "education", "label": "Education", "type": "text" },
+        { "id": "bar_admissions", "label": "Bar Admissions", "type": "string" }
+      ]
+    },
+    {
+      "bundle": "case_study",
+      "label": "Case Study",
+      "description": "Notable case studies and outcomes",
+      "body": true,
+      "fields": [
+        { "id": "practice_area", "label": "Practice Area", "type": "term(practice_areas)[]" },
+        { "id": "outcome", "label": "Outcome", "type": "string" },
+        { "id": "image", "label": "Featured Image", "type": "image" }
+      ]
+    },
+    {
+      "bundle": "news",
+      "label": "News Article",
+      "description": "Firm news, legal updates, and press releases",
+      "body": true,
+      "fields": [
+        { "id": "image", "label": "Featured Image", "type": "image" },
+        { "id": "category", "label": "Category", "type": "term(news_categories)[]" },
+        { "id": "featured", "label": "Featured", "type": "bool" }
+      ]
+    },
+    {
+      "bundle": "page",
+      "label": "Basic Page",
+      "description": "Static content pages",
+      "body": true,
+      "fields": []
+    },
+    {
+      "entity": "paragraph",
+      "bundle": "stat_item",
+      "label": "Statistic Item",
+      "description": "A key statistic with number and label",
+      "fields": [
+        { "id": "number", "label": "Number", "type": "string!", "description": "The statistic value" },
+        { "id": "label", "label": "Label", "type": "string!", "description": "What the number represents" }
+      ]
+    }
+  ],
+  "content": [
+    {
+      "id": "stat-years",
+      "type": "paragraph.stat_item",
+      "values": { "number": "35+", "label": "Years of Experience" }
+    },
+    {
+      "id": "stat-cases",
+      "type": "paragraph.stat_item",
+      "values": { "number": "5,000+", "label": "Cases Won" }
+    },
+    {
+      "id": "stat-recovery",
+      "type": "paragraph.stat_item",
+      "values": { "number": "$2B+", "label": "Recovered for Clients" }
+    },
+    {
+      "id": "stat-attorneys",
+      "type": "paragraph.stat_item",
+      "values": { "number": "50+", "label": "Attorneys" }
+    },
+    {
+      "id": "homepage",
+      "type": "node.homepage",
+      "path": "/homepage",
+      "values": {
+        "title": "Sterling & Associates Law",
+        "hero_title": "Trusted Legal Counsel",
+        "hero_subtitle": "When Results Matter Most",
+        "hero_description": "<p>For over three decades, Sterling & Associates has provided exceptional legal representation to individuals and businesses. Our team of experienced attorneys is committed to achieving the best possible outcomes for our clients.</p>",
+        "stats_items": ["@stat-years", "@stat-cases", "@stat-recovery", "@stat-attorneys"],
+        "featured_practices_title": "Our Practice Areas",
+        "cta_title": "Schedule Your Free Consultation",
+        "cta_description": "<p>Every case begins with a conversation. Contact us today to discuss your legal needs with one of our experienced attorneys. There is no obligation and no fee unless we win your case.</p>",
+        "cta_primary": "Free Consultation",
+        "cta_secondary": "Call (555) 800-1234"
+      }
+    },
+    {
+      "id": "practice-corporate",
+      "type": "node.practice_area",
+      "path": "/practice-areas/corporate-law",
+      "values": {
+        "title": "Corporate Law",
+        "body": "<p>Our corporate law practice provides comprehensive legal services to businesses of all sizes. From entity formation and governance to mergers and acquisitions, our attorneys help companies navigate the complex legal landscape.</p><h2>Services Include</h2><ul><li>Mergers & Acquisitions</li><li>Corporate Governance</li><li>Securities Regulation</li><li>Joint Ventures & Strategic Alliances</li><li>Shareholder Disputes</li></ul>",
+        "image": { "uri": "https://images.unsplash.com/photo-1469474968028-56623f02e42e?w=800&q=80", "alt": "Corporate Law" }
+      }
+    },
+    {
+      "id": "practice-litigation",
+      "type": "node.practice_area",
+      "path": "/practice-areas/commercial-litigation",
+      "values": {
+        "title": "Commercial Litigation",
+        "body": "<p>When disputes arise, our litigation team provides aggressive yet strategic representation in state and federal courts. We have a proven track record of achieving favorable outcomes for our clients in complex commercial disputes.</p><h2>Areas of Focus</h2><ul><li>Breach of Contract</li><li>Business Torts</li><li>Class Action Defense</li><li>Intellectual Property Disputes</li><li>Antitrust Litigation</li></ul>",
+        "image": { "uri": "https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=800&q=80", "alt": "Commercial Litigation" }
+      }
+    },
+    {
+      "id": "practice-realestate",
+      "type": "node.practice_area",
+      "path": "/practice-areas/real-estate",
+      "values": {
+        "title": "Real Estate Law",
+        "body": "<p>Our real estate practice handles all aspects of commercial and residential real estate transactions. We represent developers, investors, lenders, and property owners in transactions across the country.</p><h2>Services Include</h2><ul><li>Commercial Leasing</li><li>Property Acquisitions & Sales</li><li>Real Estate Finance</li><li>Land Use & Zoning</li><li>Title Insurance</li></ul>",
+        "image": { "uri": "https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&q=80", "alt": "Real Estate Law" }
+      }
+    },
+    {
+      "id": "practice-employment",
+      "type": "node.practice_area",
+      "path": "/practice-areas/employment-law",
+      "values": {
+        "title": "Employment Law",
+        "body": "<p>We advise employers and employees on the full spectrum of employment law issues. Our team stays current on evolving regulations to provide practical, business-minded counsel.</p><h2>Services Include</h2><ul><li>Employment Discrimination</li><li>Wage & Hour Disputes</li><li>Non-Compete Agreements</li><li>Workplace Investigations</li><li>Executive Compensation</li></ul>",
+        "image": { "uri": "https://images.unsplash.com/photo-1521791136064-7986c2920216?w=800&q=80", "alt": "Employment Law" }
+      }
+    },
+    {
+      "id": "attorney-sterling",
+      "type": "node.attorney",
+      "path": "/attorneys/james-sterling",
+      "values": {
+        "title": "James A. Sterling",
+        "body": "<p>James Sterling is the founding partner of Sterling & Associates and has led the firm for over 35 years. His practice focuses on complex commercial litigation and corporate transactions. He has been recognized by Best Lawyers in America and Super Lawyers for his outstanding legal work.</p>",
+        "practice_area": ["corporate-law", "commercial-litigation"],
+        "role": ["partner"],
+        "email": "jsterling@sterlinglaw.com",
+        "phone": "(555) 800-1001",
+        "office": "Main Office, Suite 4000",
+        "photo": { "uri": "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80", "alt": "James A. Sterling" },
+        "education": "<p><strong>J.D.</strong>, Harvard Law School, 1988<br/><strong>B.A. in Political Science</strong>, Yale University, 1985</p>",
+        "bar_admissions": "New York, Connecticut, U.S. Supreme Court"
+      }
+    },
+    {
+      "id": "attorney-chen",
+      "type": "node.attorney",
+      "path": "/attorneys/sarah-chen",
+      "values": {
+        "title": "Sarah L. Chen",
+        "body": "<p>Sarah Chen is a senior partner specializing in real estate law and corporate transactions. She has closed over $3 billion in commercial real estate deals and is recognized as a leading practitioner in the field. She frequently speaks at industry conferences on emerging trends in real estate finance.</p>",
+        "practice_area": ["real-estate"],
+        "role": ["partner"],
+        "email": "schen@sterlinglaw.com",
+        "phone": "(555) 800-1002",
+        "office": "Main Office, Suite 3800",
+        "photo": { "uri": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80", "alt": "Sarah L. Chen" },
+        "education": "<p><strong>J.D.</strong>, Columbia Law School, 1999<br/><strong>B.S. in Finance</strong>, University of Pennsylvania, 1996</p>",
+        "bar_admissions": "New York, New Jersey"
+      }
+    },
+    {
+      "id": "attorney-rodriguez",
+      "type": "node.attorney",
+      "path": "/attorneys/michael-rodriguez",
+      "values": {
+        "title": "Michael D. Rodriguez",
+        "body": "<p>Michael Rodriguez heads the firm's employment law practice. With over 20 years of experience, he advises Fortune 500 companies on complex employment matters and has successfully defended employers in high-stakes litigation across the country.</p>",
+        "practice_area": ["employment-law"],
+        "role": ["partner"],
+        "email": "mrodriguez@sterlinglaw.com",
+        "phone": "(555) 800-1003",
+        "office": "Main Office, Suite 3600",
+        "photo": { "uri": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80", "alt": "Michael D. Rodriguez" },
+        "education": "<p><strong>J.D.</strong>, Georgetown University Law Center, 2002<br/><strong>B.A. in Economics</strong>, Stanford University, 1999</p>",
+        "bar_admissions": "New York, California, District of Columbia"
+      }
+    },
+    {
+      "id": "attorney-thompson",
+      "type": "node.attorney",
+      "path": "/attorneys/elizabeth-thompson",
+      "values": {
+        "title": "Elizabeth M. Thompson",
+        "body": "<p>Elizabeth Thompson is a litigation associate known for her meticulous preparation and persuasive courtroom presence. She has been instrumental in securing favorable verdicts and settlements in complex commercial disputes totaling over $200 million.</p>",
+        "practice_area": ["commercial-litigation"],
+        "role": ["associate"],
+        "email": "ethompson@sterlinglaw.com",
+        "phone": "(555) 800-1004",
+        "office": "Main Office, Suite 3200",
+        "photo": { "uri": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&q=80", "alt": "Elizabeth M. Thompson" },
+        "education": "<p><strong>J.D.</strong>, NYU School of Law, 2015<br/><strong>B.A. in English</strong>, Princeton University, 2012</p>",
+        "bar_admissions": "New York"
+      }
+    },
+    {
+      "id": "case-merger",
+      "type": "node.case_study",
+      "path": "/case-studies/tech-sector-merger",
+      "values": {
+        "title": "Tech Sector Merger Defense",
+        "body": "<p>Sterling & Associates represented a mid-market technology company facing a hostile takeover attempt. Our corporate team developed a comprehensive defense strategy that ultimately resulted in a negotiated merger at a 40% premium to the initial offer.</p><h2>Challenge</h2><p>Our client, a publicly traded software company, received an unsolicited acquisition offer significantly below market value. The acquiring company had already accumulated a substantial stake and was pressuring the board.</p><h2>Approach</h2><p>Our team implemented a multi-pronged defense strategy, including shareholder communications, regulatory filings, and identification of a white knight bidder.</p>",
+        "practice_area": ["corporate-law"],
+        "outcome": "$1.2B favorable merger completed at 40% premium",
+        "image": { "uri": "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80", "alt": "Tech Sector Merger" }
+      }
+    },
+    {
+      "id": "case-discrimination",
+      "type": "node.case_study",
+      "path": "/case-studies/employment-class-action",
+      "values": {
+        "title": "Employment Class Action Defense",
+        "body": "<p>We successfully defended a Fortune 500 retail company against a nationwide class action alleging systematic wage and hour violations. The case involved over 10,000 potential class members and sought $500 million in damages.</p><h2>Challenge</h2><p>A group of current and former employees filed a class action alleging the company systematically misclassified workers and failed to pay overtime.</p><h2>Approach</h2><p>Our employment team conducted an exhaustive analysis of pay records, job descriptions, and company policies, ultimately defeating class certification.</p>",
+        "practice_area": ["employment-law"],
+        "outcome": "Class certification denied; case dismissed",
+        "image": { "uri": "https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?w=800&q=80", "alt": "Employment Class Action" }
+      }
+    },
+    {
+      "id": "case-realestate",
+      "type": "node.case_study",
+      "path": "/case-studies/mixed-use-development",
+      "values": {
+        "title": "Mixed-Use Development Transaction",
+        "body": "<p>Sterling & Associates guided a major real estate developer through the acquisition, financing, and development of a $350 million mixed-use project in downtown Manhattan, including navigating complex zoning requirements and public-private partnerships.</p><h2>Challenge</h2><p>The project required assembling multiple parcels, obtaining zoning variances, securing complex financing, and negotiating with city agencies for public infrastructure improvements.</p><h2>Approach</h2><p>Our real estate team coordinated with environmental counsel, land use specialists, and financial advisors to structure the transaction in phases.</p>",
+        "practice_area": ["real-estate"],
+        "outcome": "$350M development approved and financed in 8 months",
+        "image": { "uri": "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?w=800&q=80", "alt": "Mixed-Use Development" }
+      }
+    },
+    {
+      "id": "news-expansion",
+      "type": "node.news",
+      "path": "/news/firm-expansion-announcement",
+      "values": {
+        "title": "Sterling & Associates Opens New West Coast Office",
+        "body": "<p>Sterling & Associates is pleased to announce the opening of our new office in San Francisco, marking a significant expansion of our West Coast presence. The new office will be led by three partners and house a team of 15 attorneys specializing in technology and corporate law.</p><p>\"This expansion reflects our commitment to serving our growing base of technology sector clients,\" said founding partner James Sterling. \"San Francisco is the ideal location for us to deepen our relationships in the tech industry.\"</p>",
+        "category": ["firm-news"],
+        "featured": true,
+        "image": { "uri": "https://images.unsplash.com/photo-1449034446853-66c86144b0ad?w=800&q=80", "alt": "San Francisco Office" }
+      }
+    },
+    {
+      "id": "news-recognition",
+      "type": "node.news",
+      "path": "/news/best-law-firms-ranking",
+      "values": {
+        "title": "Firm Recognized in U.S. News Best Law Firms 2026",
+        "body": "<p>Sterling & Associates has been named a Tier 1 firm in Corporate Law and Commercial Litigation by U.S. News & World Report in their 2026 Best Law Firms rankings. This recognition is based on client feedback, peer review, and analysis of the firm's legal expertise.</p><p>\"We are honored by this recognition,\" said managing partner Sarah Chen. \"It reflects the dedication and talent of our entire team.\"</p>",
+        "category": ["awards"],
+        "featured": true,
+        "image": { "uri": "https://images.unsplash.com/photo-1589994965851-a8f479c573a9?w=800&q=80", "alt": "Best Law Firms Award" }
+      }
+    },
+    {
+      "id": "news-probono",
+      "type": "node.news",
+      "path": "/news/pro-bono-initiative",
+      "values": {
+        "title": "Firm Launches Pro Bono Immigration Initiative",
+        "body": "<p>Sterling & Associates has launched a new pro bono initiative to provide free legal representation to immigrants and asylum seekers. The program, led by associate Elizabeth Thompson, aims to assist at least 100 individuals in the first year.</p><p>\"Access to legal representation should not depend on ability to pay,\" said Thompson. \"Our attorneys have the skills and resources to make a real difference in people's lives.\"</p>",
+        "category": ["community"],
+        "featured": false,
+        "image": { "uri": "https://images.unsplash.com/photo-1531545514256-b1400bc00f31?w=800&q=80", "alt": "Pro Bono Initiative" }
+      }
+    },
+    {
+      "id": "page-about",
+      "type": "node.page",
+      "path": "/about",
+      "values": {
+        "title": "About Sterling & Associates",
+        "body": "<p>Founded in 1990, Sterling & Associates Law has grown from a boutique practice to one of the region's most respected full-service law firms. With over 50 attorneys across three offices, we serve clients ranging from Fortune 500 corporations to individuals facing their most challenging legal matters.</p><h2>Our Mission</h2><p>To provide exceptional legal counsel with unwavering integrity, achieving the best possible results for our clients while maintaining the highest ethical standards.</p><h2>Our Values</h2><ul><li><strong>Excellence</strong> - We hold ourselves to the highest standard in every matter we handle.</li><li><strong>Integrity</strong> - We are honest, ethical, and transparent in all our dealings.</li><li><strong>Client Focus</strong> - Our clients' interests always come first.</li><li><strong>Community</strong> - We are committed to giving back through pro bono work and civic engagement.</li></ul>"
+      }
+    },
+    {
+      "id": "page-contact",
+      "type": "node.page",
+      "path": "/contact",
+      "values": {
+        "title": "Contact Us",
+        "body": "<h2>Main Office</h2><p>Sterling & Associates Law<br/>One Liberty Plaza, Suite 4000<br/>New York, NY 10006</p><h2>Phone</h2><p>Main: (555) 800-1234<br/>Fax: (555) 800-1235</p><h2>Office Hours</h2><p>Monday - Friday: 8:30 AM - 6:00 PM EST<br/>Saturday: By Appointment<br/>Sunday: Closed</p><p>For after-hours emergencies, please call our main number and follow the prompts for our emergency answering service.</p>"
+      }
+    }
+  ]
+}

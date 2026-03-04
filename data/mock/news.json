@@ -1,0 +1,138 @@
+{
+  "data": {
+    "nodeNewsItems": {
+      "__typename": "NodeNewsConnection",
+      "nodes": [
+        {
+          "__typename": "NodeNews",
+          "id": "news-expansion",
+          "title": "Sterling & Associates Opens New West Coast Office",
+          "path": "/news/firm-expansion-announcement",
+          "body": {
+            "processed": "<p>Sterling & Associates is pleased to announce the opening of our new office in San Francisco, marking a significant expansion of our West Coast presence. The new office will be led by three partners and house a team of 15 attorneys specializing in technology and corporate law.</p><p>\"This expansion reflects our commitment to serving our growing base of technology sector clients,\" said founding partner James Sterling. \"San Francisco is the ideal location for us to deepen our relationships in the tech industry.\"</p>",
+            "summary": "Sterling & Associates is pleased to announce the opening of our new office in San Francisco, marking a significant expansion of our West Coast presence. The new office will be led by three partners an"
+          },
+          "category": [
+            {
+              "id": "firm-news",
+              "name": "firm-news"
+            }
+          ],
+          "featured": true,
+          "image": {
+            "url": "https://images.unsplash.com/photo-1449034446853-66c86144b0ad?w=800&q=80",
+            "alt": "San Francisco Office",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1449034446853-66c86144b0ad?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1449034446853-66c86144b0ad?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1449034446853-66c86144b0ad?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeNews",
+          "id": "news-recognition",
+          "title": "Firm Recognized in U.S. News Best Law Firms 2026",
+          "path": "/news/best-law-firms-ranking",
+          "body": {
+            "processed": "<p>Sterling & Associates has been named a Tier 1 firm in Corporate Law and Commercial Litigation by U.S. News & World Report in their 2026 Best Law Firms rankings. This recognition is based on client feedback, peer review, and analysis of the firm's legal expertise.</p><p>\"We are honored by this recognition,\" said managing partner Sarah Chen. \"It reflects the dedication and talent of our entire team.\"</p>",
+            "summary": "Sterling & Associates has been named a Tier 1 firm in Corporate Law and Commercial Litigation by U.S. News & World Report in their 2026 Best Law Firms rankings. This recognition is based on client fee"
+          },
+          "category": [
+            {
+              "id": "awards",
+              "name": "awards"
+            }
+          ],
+          "featured": true,
+          "image": {
+            "url": "https://images.unsplash.com/photo-1589994965851-a8f479c573a9?w=800&q=80",
+            "alt": "Best Law Firms Award",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1589994965851-a8f479c573a9?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1589994965851-a8f479c573a9?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1589994965851-a8f479c573a9?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        },
+        {
+          "__typename": "NodeNews",
+          "id": "news-probono",
+          "title": "Firm Launches Pro Bono Immigration Initiative",
+          "path": "/news/pro-bono-initiative",
+          "body": {
+            "processed": "<p>Sterling & Associates has launched a new pro bono initiative to provide free legal representation to immigrants and asylum seekers. The program, led by associate Elizabeth Thompson, aims to assist at least 100 individuals in the first year.</p><p>\"Access to legal representation should not depend on ability to pay,\" said Thompson. \"Our attorneys have the skills and resources to make a real difference in people's lives.\"</p>",
+            "summary": "Sterling & Associates has launched a new pro bono initiative to provide free legal representation to immigrants and asylum seekers. The program, led by associate Elizabeth Thompson, aims to assist at "
+          },
+          "category": [
+            {
+              "id": "community",
+              "name": "community"
+            }
+          ],
+          "featured": false,
+          "image": {
+            "url": "https://images.unsplash.com/photo-1531545514256-b1400bc00f31?w=800&q=80",
+            "alt": "Pro Bono Initiative",
+            "width": 800,
+            "height": 533,
+            "variations": [
+              {
+                "name": "LARGE",
+                "url": "https://images.unsplash.com/photo-1531545514256-b1400bc00f31?w=800&q=80",
+                "width": 800,
+                "height": 533
+              },
+              {
+                "name": "MEDIUM",
+                "url": "https://images.unsplash.com/photo-1531545514256-b1400bc00f31?w=480&q=80",
+                "width": 480,
+                "height": 320
+              },
+              {
+                "name": "THUMBNAIL",
+                "url": "https://images.unsplash.com/photo-1531545514256-b1400bc00f31?w=200&q=80",
+                "width": 200,
+                "height": 133
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
