@@ -12,8 +12,16 @@ export default function HeroSection({ homepageContent }: HeroSectionProps) {
   const description = (homepageContent as any)?.heroDescription?.processed || ''
 
   return (
-    <section className="bg-gradient-to-br from-primary-800 via-primary-900 to-primary-950 text-white py-20 md:py-28">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="relative overflow-hidden bg-gradient-to-br from-primary-800 via-primary-900 to-primary-950 text-white py-20 md:py-28">
+      <div className="absolute inset-0">
+        <img
+          src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=2000&q=80&fit=crop"
+          alt="Law books and courthouse"
+          className="h-full w-full object-cover opacity-18"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-primary-950/90 via-primary-900/85 to-primary-800/75" />
+      </div>
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl">
           <div className="text-accent-400 text-sm font-semibold tracking-wider uppercase mb-3">
             Distinguished Legal Counsel
