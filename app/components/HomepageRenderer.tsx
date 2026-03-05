@@ -102,11 +102,19 @@ export default function HomepageRenderer({ homepageContent }: HomepageRendererPr
             </h2>
           </div>
           <div className="grid grid-cols-3 md:grid-cols-6 gap-6">
-            {[Scale, BookOpen, Briefcase, Shield, FileText, Users].map((Icon, i) => (
+            {[
+              { icon: Scale, label: 'Litigation' },
+              { icon: BookOpen, label: 'Corporate' },
+              { icon: Briefcase, label: 'Real Estate' },
+              { icon: Shield, label: 'Employment' },
+              { icon: FileText, label: 'Estate Planning' },
+              { icon: Users, label: 'Family Law' },
+            ].map((item, i) => (
               <div key={i} className="flex flex-col items-center">
                 <div className="w-14 h-14 bg-primary-100 rounded-full flex items-center justify-center mb-2">
-                  <Icon className="w-6 h-6 text-primary-600" />
+                  <item.icon className="w-6 h-6 text-primary-600" />
                 </div>
+                <span className="text-xs text-slate-600 text-center">{item.label}</span>
               </div>
             ))}
           </div>
