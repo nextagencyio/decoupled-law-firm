@@ -111,10 +111,10 @@ export default function HomepageRenderer({ homepageContent }: HomepageRendererPr
               { icon: Users, label: 'Family Law' },
             ].map((item, i) => (
               <div key={i} className="flex flex-col items-center">
-                <div className="w-14 h-14 bg-primary-100 rounded-full flex items-center justify-center mb-2">
+                <div className="w-14 h-14 bg-primary-100 rounded-full flex items-center justify-center mb-3">
                   <item.icon className="w-6 h-6 text-primary-600" />
                 </div>
-                <span className="text-xs text-slate-600 text-center">{item.label}</span>
+                <span className="text-sm font-medium text-primary-800 text-center">{item.label}</span>
               </div>
             ))}
           </div>
