@@ -23,7 +23,7 @@ export default function StatsSection({ homepageContent }: StatsSectionProps) {
         <div className="flex flex-wrap items-center justify-center divide-x divide-slate-200">
           {displayStats.map((stat: any, i: number) => (
             <div key={stat.id || i} className="px-8 py-4 text-center">
-              <div className="text-3xl md:text-4xl font-bold text-accent-600">{stat.value || stat.statValue}</div>
+              <div className="text-3xl md:text-4xl font-bold text-accent-600">{stat.value || stat.number || stat.statValue}</div>
               <div className="text-slate-500 text-sm mt-1">{stat.label || stat.statLabel || stat.title}</div>
             </div>
           ))}
