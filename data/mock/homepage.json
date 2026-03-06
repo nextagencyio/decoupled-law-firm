@@ -19,28 +19,28 @@
               "__typename": "ParagraphStatItem",
               "id": "stat-years",
               "title": "",
-              "number": "35+",
+              "number": "35+", "value": "35+",
               "label": "Years of Experience"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-cases",
               "title": "",
-              "number": "5,000+",
+              "number": "5,000+", "value": "5,000+",
               "label": "Cases Won"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-recovery",
               "title": "",
-              "number": "$2B+",
+              "number": "$2B+", "value": "$2B+",
               "label": "Recovered for Clients"
             },
             {
               "__typename": "ParagraphStatItem",
               "id": "stat-attorneys",
               "title": "",
-              "number": "50+",
+              "number": "50+", "value": "50+",
               "label": "Attorneys"
             }
           ],
