@@ -7,6 +7,7 @@ import Header from '../components/Header'
 import AttorneyCard from '../components/AttorneyCard'
 
 export const revalidate = 3600
+export const dynamic = 'force-dynamic'
 
 export const metadata: Metadata = {
   title: 'Our Attorneys | Hartwell & Crane LLP',
