@@ -2,7 +2,7 @@
 
 import Link from 'next/link'
 import { useQuery } from '@apollo/client'
-import { GET_FEATURED_PRACTICE_AREAS } from '@/lib/queries'
+import { GQL_FEATURED_PRACTICE_AREAS } from '@/lib/queries'
 import { DrupalHomepage, DrupalPracticeArea } from '@/lib/types'
 import { ArrowRight, Scale } from 'lucide-react'
 import ResponsiveImage from './ResponsiveImage'
@@ -11,7 +11,7 @@ interface PracticeAreasPreviewProps { homepageContent?: DrupalHomepage | null }
 interface FeaturedData { nodePracticeAreas: { nodes: DrupalPracticeArea[] } }
 
 export default function PracticeAreasPreview({ homepageContent }: PracticeAreasPreviewProps) {
-  const { data, loading, error } = useQuery<FeaturedData>(GET_FEATURED_PRACTICE_AREAS)
+  const { data, loading, error } = useQuery<FeaturedData>(GQL_FEATURED_PRACTICE_AREAS)
   const areas = data?.nodePracticeAreas?.nodes || []
   const sectionTitle = homepageContent?.featuredPracticesTitle || 'Our Practice Areas'
 

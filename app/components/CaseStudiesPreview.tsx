@@ -2,14 +2,14 @@
 
 import Link from 'next/link'
 import { useQuery } from '@apollo/client'
-import { GET_FEATURED_CASE_STUDIES } from '@/lib/queries'
+import { GQL_FEATURED_CASE_STUDIES } from '@/lib/queries'
 import { DrupalCaseStudy } from '@/lib/types'
 import { ArrowRight, CheckCircle } from 'lucide-react'
 
 interface Data { nodeCaseStudies: { nodes: DrupalCaseStudy[] } }
 
 export default function CaseStudiesPreview() {
-  const { data, loading, error } = useQuery<Data>(GET_FEATURED_CASE_STUDIES)
+  const { data, loading, error } = useQuery<Data>(GQL_FEATURED_CASE_STUDIES)
   const cases = data?.nodeCaseStudies?.nodes || []
   if (loading) return <section className="py-16 md:py-20 bg-slate-900 text-white"><div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8"><div className="text-center mb-12"><h2 className="text-3xl md:text-4xl font-bold mb-4">Notable Results</h2></div><div className="grid grid-cols-1 md:grid-cols-3 gap-6">{[1,2,3].map(i => <div key={i} className="bg-white/10 rounded-xl p-6 animate-pulse"><div className="h-6 bg-white/20 rounded w-3/4 mb-4" /><div className="h-4 bg-white/20 rounded w-1/2" /></div>)}</div></div></section>
   if (error || cases.length === 0) return null

@@ -1,5 +1,36 @@
-// Tagged template that returns the query string
+import { gql as apolloGql } from '@apollo/client'
+
+// Tagged template that returns the query string for server-side client.raw() calls
 const gql = (strings: TemplateStringsArray, ...values: any[]) => strings.reduce((a, s, i) => a + s + (values[i] || ''), '')
+
+// Apollo DocumentNode versions for client-side useQuery hooks
+export const GQL_FEATURED_PRACTICE_AREAS = apolloGql`
+  query GetFeaturedPracticeAreas {
+    nodePracticeAreas(first: 4, sortKey: TITLE) {
+      nodes {
+        id title path
+        ... on NodePracticeArea {
+          body { summary }
+          image { url alt variations(styles: [MEDIUM]) { name url width height } }
+        }
+      }
+    }
+  }
+`
+
+export const GQL_FEATURED_CASE_STUDIES = apolloGql`
+  query GetFeaturedCaseStudies {
+    nodeCaseStudies(first: 3, sortKey: CREATED_AT) {
+      nodes {
+        id title path
+        ... on NodeCaseStudy {
+          practiceArea { ... on TermInterface { id name } }
+          outcome
+        }
+      }
+    }
+  }
+`
 
 export const GET_HOMEPAGE_DATA = gql`
   query GetHomepageData {
